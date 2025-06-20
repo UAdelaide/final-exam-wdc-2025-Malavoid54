@@ -50,8 +50,8 @@ router.get('/mydogs', async (req, res) => {
     );
     res.json(rows);
   } catch(err) {
-    res.status(500).json({ error: 'Failed to retrieve dogs'})
+    res.status(500).json({ error: 'Failed to retrieve dogs' });
   }
-})
-
+});
+//END OF CHAGNES
 module.exports = router;
