@@ -57,13 +57,13 @@
             error.value = err.message;
           }
         }
-
+        //START OF CHANGES TO COED
         async function getCurrentUser() {
           const res = await fetch('/api/users/me');
           if (!res.ok) throw new Error('Cant get current user');
           return await res.json();
         }
-
+        //END OF CHANGES
         async function applyToWalk(requestId) {
           try {
             const res = await fetch(`/api/walks/${requestId}/apply`, {
