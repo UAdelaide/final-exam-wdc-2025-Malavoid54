@@ -84,7 +84,7 @@
               const imgData = await imgRes.json();
               dog.image = imgData.message
             } catch (err){
-              console.error("")
+              console.error('Doggies didnt load ;(', err);
             }
           }
         }
