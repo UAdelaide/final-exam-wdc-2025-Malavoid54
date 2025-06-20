@@ -1,5 +1,6 @@
 const mysql = require('mysql/promise');
 
 const db = mysql.creatPool({
-    host: ''
-})
+    host: 'localhost,
+    '
+});
