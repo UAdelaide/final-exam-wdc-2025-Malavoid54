@@ -54,6 +54,8 @@ app.post('/login', async (req, res) => {
 // END OF CHANGES
 
 //START OF CHANGES Added a logout route
-app.use
+app.post('./logout', (req, res) => {
+    
+})
 
 module.exports = app;
