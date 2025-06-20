@@ -21,9 +21,8 @@ async function seedData() {
             ((SELECT UserID FROM Users WHERE Username = 'alice123'), 'Max', 'medium'),
             ((SELECT UserID FROM Users WHERE Username = 'carol123'), 'Bella', 'small'),
             ((SELECT UserID FROM Users WHERE Username = 'alice123'), 'Rocky', 'large'),
-            ((SELECT UserID FROM Users WHERE Username = 'alice123'), 'LuLu', 'medium'),
-            ((SELECT UserID FROM Users WHERE Username = 'alice123'), 'Otto', 'small'),
-
+            ((SELECT UserID FROM Users WHERE Username = 'ohyeapuppiesiluvem'), 'LuLu', 'medium'),
+            ((SELECT UserID FROM Users WHERE Username = 'ohyeapuppiesiluvem'), 'Otto', 'small')
             `);
     }
 
