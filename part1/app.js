@@ -26,10 +26,10 @@ async function seedData() {
         `);
         await db.execute(`INSERT IGNORE INTO WalkRequests (DogID, RequestTime, WalkDuration, WalkLocation, WalkStatus) VALUES
             ((SELECT DogID FROM Dogs WHERE DogName = 'Max'), '2025-06-10 08:00:00', 30, 'Parklands', 'open'),
+            ((SELECT DogID FROM Dogs WHERE DogName = 'Max'), '2025-06-10 08:00:00', 30, 'Beachside Ave', 'accepted'),
             ((SELECT DogID FROM Dogs WHERE DogName = 'Max'), '2025-06-10 08:00:00', 30, 'Parklands', 'open'),
             ((SELECT DogID FROM Dogs WHERE DogName = 'Max'), '2025-06-10 08:00:00', 30, 'Parklands', 'open'),
-            ((SELECT DogID FROM Dogs WHERE DogName = 'Max'), '2025-06-10 08:00:00', 30, 'Parklands', 'open'),
-            ((SELECT DogID FROM Dogs WHERE DogName = 'Max'), '2025-06-10 08:00:00', 30, 'Parklands', 'open')
+            ((SELECT DogID FROM Dogs WHERE DogName = 'Max'), '2025-06-10 08:00:00', 30, 'Parklands', 'cancelled')
             `);
     }
 
