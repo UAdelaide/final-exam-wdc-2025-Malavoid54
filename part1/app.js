@@ -15,8 +15,9 @@ async function seedData() {
              ('bobwalker', 'bob@example.com', 'hashed456', 'walker'),
              ('carol123', 'carol@example.com', 'hashed789', 'owner'),
              ('iluvd0gs', 'iluvd0gs123@example.com', 'hashed321', 'walker'),
-             ('ohyeapuppiesiluvem', 'puppies@example.com',)
+             ('ohyeapuppiesiluvem', 'puppies@example.com', 'hashed101', 'owner')
         `);
+        
     }
 
 }
