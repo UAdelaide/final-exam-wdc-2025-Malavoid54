@@ -49,7 +49,9 @@ router.get('/mydogs', async (req, res) => {
       [req.session.user.user_id]
     );
     res.json(rows);
-  } catch(err)
+  } catch(err) {
+    res.status(500).json({ error: 'Failed to retrieve dogs'})
+  }
 })
 
 module.exports = router;
