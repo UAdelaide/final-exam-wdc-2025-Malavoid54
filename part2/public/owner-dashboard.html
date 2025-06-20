@@ -141,7 +141,9 @@
   <!--START OF CHANGES LOGOUT Script-->
   <script>
     document.getElementById('logoutBtn').addEventListener('click', async () =>{
-      const res = await fetch('/logout', { method})
+      const res = await fetch('/logout', { method: 'POST'});
+      const data = await res.json();
+      if (data)
     })
   </script>
 </body>
