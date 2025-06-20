@@ -95,9 +95,11 @@
   <!--START OF CHANGES-->
   <script>
     document.getElementById('logoutBtn').addEventListener('click', async () => {
-      const rest = await fetch('/logout', { method 'POST'});
+      const rest = await fetch('/logout', { method: 'POST'});
       const data = await res.json();
-      if (data.sucess)
+      if (data.sucess) {
+        
+      }
     })
   </script>
 </body>
