@@ -19,8 +19,8 @@ async function seedData() {
         `);
         await db.execute(`INSERT IGNORE INTO Dogs (OwnerID, DogName, DogSize) VALUES
             ((SELECT UserID FROM Users WHERE Username = 'alice123'), 'Max', 'medium'),
-            ((SELECT UserID FROM Users WHERE Username = 'alice123'), 'Max', 'small'),
-            ((SELECT UserID FROM Users WHERE Username = 'alice123'), 'Max', 'large'),
+            ((SELECT UserID FROM Users WHERE Username = 'carol123'), 'Bella', 'small'),
+            ((SELECT UserID FROM Users WHERE Username = 'alice123'), 'Rocky', 'large'),
             ((SELECT UserID FROM Users WHERE Username = 'alice123'), 'LuLu', 'medium'),
             ((SELECT UserID FROM Users WHERE Username = 'alice123'), 'Otto', 'small'),
 
