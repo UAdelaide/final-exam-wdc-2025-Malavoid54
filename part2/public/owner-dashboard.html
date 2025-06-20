@@ -130,7 +130,8 @@
 
         async function loadDogs(){
           try {
-            const res = await fetch ('/api/users/mydogs')
+            const res = await fetch ('/api/users/mydogs');
+            dogs.value = await res.json();
           }
         }
 
