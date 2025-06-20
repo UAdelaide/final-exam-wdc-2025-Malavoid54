@@ -23,7 +23,8 @@ async function seedData() {
             ((SELECT UserID FROM Users WHERE Username = 'alice123'), 'Rocky', 'large'),
             ((SELECT UserID FROM Users WHERE Username = 'ohyeapuppiesiluvem'), 'LuLu', 'medium'),
             ((SELECT UserID FROM Users WHERE Username = 'ohyeapuppiesiluvem'), 'Otto', 'small')
-            `);
+        `);
+        await db.execute(`INSERT IGNORE INTO`)
     }
 
 }
