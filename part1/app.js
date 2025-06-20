@@ -38,5 +38,5 @@ async function seedData() {
 }
 app.listen(PORT, async () => {
     await seedData();
-    console.log(``)
+    console.log(`Server Running at http://localhost:${PORT}`);
 });
