@@ -10,7 +10,7 @@ app.use('./api', apiRoutes);
 
 async function seedData() {
     try {
-        await db.execute(`INSERT IGNORE INTO Users (Username, email, password_hash, role) VALUES
+        await db.execute(`INSERT IGNORE INTO Users (Username, EmailUser, PasswordHash, RoleUser) VALUES
              ('alice123', 'alice@example.com', 'hashed123', 'owner'),
              ('bobwalker', 'bob@example.com', 'hashed456', 'walker'),
              ('carol123', 'carol@example.com', 'hashed789', 'owner'),
