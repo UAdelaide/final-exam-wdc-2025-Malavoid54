@@ -53,6 +53,7 @@ app.post('/login', async (req, res) => {
 });
 // END OF CHANGES
 
-
+//START OF CHANGES Added a logout route
+app.use
 
 module.exports = app;
