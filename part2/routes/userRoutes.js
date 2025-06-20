@@ -39,7 +39,9 @@ router.get('/me', (req, res) => {
 
 //START OF CHANGES get dogs that belong to the owner that is logged in currently to the webpage
 router.get('/mydogs', async (req, res) => {
-  if
-}
+  if(!req.session.user || req.session.user.role !== 'owner') {
+    return res.status(403)
+  }
+})
 
 module.exports = router;
