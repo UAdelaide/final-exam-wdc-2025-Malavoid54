@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 require('dotenv').config();
 
-const session = require('express-session'); // START: added session support
+const session = require('express-session'); // Added session support
 
 const app = express();
 
