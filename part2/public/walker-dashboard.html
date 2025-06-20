@@ -98,7 +98,7 @@
       const rest = await fetch('/logout', { method: 'POST'});
       const data = await res.json();
       if (data.sucess) {
-        
+        window.location.href = '/index.html';
       }
     })
   </script>
