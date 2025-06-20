@@ -37,5 +37,6 @@ async function seedData() {
     }
 }
 app.listen(PORT, async () => {
-
+    await seedData();
+    console.log('')
 });
