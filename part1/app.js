@@ -33,7 +33,7 @@ async function seedData() {
             `);
         console.log("Full seed data inserted.");
     } catch (err) {
-        
+        console.error("Error inserting seed data:", err);
     }
 
 }
