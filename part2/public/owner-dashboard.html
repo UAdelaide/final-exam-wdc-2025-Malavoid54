@@ -22,7 +22,7 @@
             <label class="form-label">Select your Mr/Mrs Doggy</label>
             <select v-model="form.dog_id" class="form-select" required>
               <option value="">choose a doggy</option>
-              <option
+              <option v-for="dog in dogs" :value="""
             </select>
           </div>
           <div class="mb-3">
