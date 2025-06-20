@@ -35,5 +35,5 @@ async function seedData() {
     } catch (err) {
         console.error("Error inserting seed data:", err);
     }
-
 }
+app.listen
