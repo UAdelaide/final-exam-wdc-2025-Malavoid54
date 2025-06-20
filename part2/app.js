@@ -26,7 +26,7 @@ const userRoutes = require('./routes/userRoutes');
 app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
 
-// START OF CHANGES add top-level login route
+// START OF CHANGES added top-level login route
 const db = require('./models/db');
 app.post('/login', async (req, res) => {
   const { username, password } = req.body;
@@ -51,6 +51,6 @@ app.post('/login', async (req, res) => {
     res.status(500).json({ success: false, message: 'Login failed' });
   }
 });
-// END
+// END OF CHANGES
 
 module.exports = app;
