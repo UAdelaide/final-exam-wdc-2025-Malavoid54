@@ -38,6 +38,6 @@ router.get('/me', (req, res) => {
 // REMOVED old login route since it's handled now in app.js, and thus no longer necessary in this file
 
 //START OF CHANGES get dogs that belong to the owner that is logged in currently to the webpage
-router.get()
+router.get('/mydogs', async (req, res)
 
 module.exports = router;
