@@ -42,6 +42,12 @@ router.get('/mydogs', async (req, res) => {
   if(!req.session.user || req.session.user.role !== 'owner') {
     return res.status(403).json({ error: 'Not authorised' });
   }
+
+  try {
+    const [rows] = await db.query(
+      
+    )
+  }
 })
 
 module.exports = router;
