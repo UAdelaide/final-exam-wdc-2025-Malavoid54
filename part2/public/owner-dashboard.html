@@ -127,7 +127,7 @@
             message.value = '';
           }
         }
-
+        //START OF CHANGES
         async function loadDogs(){
           try {
             const res = await fetch ('/api/users/mydogs');
@@ -136,7 +136,7 @@
             error.value = 'Failed to load your dogs';
           }
         }
-
+        //END OF CHANGES
         onMounted(() => {
           loadWalks();
         });
