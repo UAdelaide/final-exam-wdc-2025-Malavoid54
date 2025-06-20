@@ -143,7 +143,9 @@
     document.getElementById('logoutBtn').addEventListener('click', async () =>{
       const res = await fetch('/logout', { method: 'POST'});
       const data = await res.json();
-      if (data)
+      if (data.success){
+        window.location.href = '/index.html';
+      }
     })
   </script>
 </body>
