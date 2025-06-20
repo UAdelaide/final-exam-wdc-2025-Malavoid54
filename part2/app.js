@@ -6,13 +6,13 @@ const session = require('express-session'); // Added session support
 
 const app = express();
 
-// START: session middleware
+// START OF CHANGES: adding session middleware
 app.use(session({
   secret: 'doggysecret',
   resave: false,
   saveUninitialized: true
 }));
-// END
+// END OF CHANGES
 
 // Middleware
 app.use(express.json());
@@ -26,7 +26,7 @@ const userRoutes = require('./routes/userRoutes');
 app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
 
-// START: add top-level login route
+// START OF CHANGES add top-level login route
 const db = require('./models/db');
 app.post('/login', async (req, res) => {
   const { username, password } = req.body;
