@@ -46,7 +46,7 @@
         const walks = ref([]);
         const message = ref('');
         const error = ref('');
-        const user = await getCurrentUser();//Changes to 
+        const user = await getCurrentUser();//Changes to await the function to fetch current user rather than hardcoded
 
         async function loadWalkRequests() {
           try {
