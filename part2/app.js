@@ -57,8 +57,9 @@ app.post('/login', async (req, res) => {
 app.post('./logout', (req, res) => {
     req.session.destroy(err => {
         if (err) {
-            return res.status(500).json({ error: 'Logout failed' })
+            return res.status(500).json({ error: 'Logout failed' });
         }
+        res.clearCookie('connect')
     })
 })
 
