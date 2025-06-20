@@ -60,7 +60,9 @@ app.post('./logout', (req, res) => {
             return res.status(500).json({ error: 'Logout failed' });
         }
         res.clearCookie('connect.sid'); //clears the cookeis from the sessions
-    })
-})
+        res.json({ success: true});
+    });
+});
+//END OF CHANGES
 
 module.exports = app;
