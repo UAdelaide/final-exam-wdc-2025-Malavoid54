@@ -35,9 +35,6 @@ router.get('/me', (req, res) => {
   res.json(req.session.user);
 });
 
-// REMOVED old login route since it's handled now in app.js,
-// START: old route replaced
-// router.post('/login', ...)
-// END
+// REMOVED old login route since it's handled now in app.js, and thus no longer necessary in this file
 
 module.exports = router;
