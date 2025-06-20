@@ -31,7 +31,9 @@ async function seedData() {
             ((SELECT DogID FROM Dogs WHERE DogName = 'Max'), '2025-06-10 08:00:00', 60, 'RiverBank Arena', 'open'),
             ((SELECT DogID FROM Dogs WHERE DogName = 'Max'), '2025-06-10 08:00:00', 20, 'Downtown', 'cancelled')
             `);
-        console.log
+        console.log("Full seed data inserted.");
+    } catch (err) {
+        
     }
 
 }
