@@ -25,7 +25,7 @@ async function seedData() {
             ((SELECT UserID FROM Users WHERE Username = 'ohyeapuppiesiluvem'), 'Otto', 'small')
         `);
         await db.execute(`INSERT IGNORE INTO WalkRequests (DogID, RequestTime, WalkDuration, WalkLocation, WalkStatus) VALUES
-            ((SELECT DogID FROM Dogs WHERE DogName = 'Max'), )
+            ((SELECT DogID FROM Dogs WHERE DogName = 'Max'), '2025-06-10 08:00:00', 30, )
 
             `);
     }
