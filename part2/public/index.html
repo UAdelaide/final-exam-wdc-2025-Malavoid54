@@ -108,7 +108,9 @@
               console.error('Doggies didnt load ;(', err);
             }
           }
-          
+          this.dogs = data;
+        } catch(err){
+          console.error
         }
       }
     }).mount('#dog-list');
