@@ -36,4 +36,6 @@ async function seedData() {
         console.error("Error inserting seed data:", err);
     }
 }
-app.listen
+app.listen(PORT, async () => {
+
+});
