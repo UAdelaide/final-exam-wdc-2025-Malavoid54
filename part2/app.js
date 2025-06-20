@@ -26,7 +26,7 @@ const userRoutes = require('./routes/userRoutes');
 app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
 
-// START OF CHANGES added top-level login route
+// START OF CHANGES added top-level login route, that has moved from userRoutes to this file
 const db = require('./models/db');
 app.post('/login', async (req, res) => {
   const { username, password } = req.body;
