@@ -34,13 +34,13 @@ async function seedData() {
       ((SELECT dog_id FROM Dogs WHERE name = 'LuLu'), '2025-06-15 18:00:00', 60, 'RiverBank Arena', 'open'),
       ((SELECT dog_id FROM Dogs WHERE name = 'Otto'), '2025-07-13 16:15:00', 20, 'Downtown', 'cancelled')`);
 
-    console.log("✅ Full seed data inserted.");
+    console.log("Full seed data inserted.");
   } catch (err) {
-    console.error("❌ Error inserting seed data:", err);
+    console.error("Error inserting seed data:", err);
   }
 }
 
 app.listen(PORT, async () => {
   await seedData();
-  console.log(🚀 Server running at http://localhost:${PORT});
+  console.log(`Server running at http://localhost:${PORT}`);
 });
